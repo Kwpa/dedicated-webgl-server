@@ -300,7 +300,16 @@ namespace Mirror
         {
             // Get all NetworkBehaviours
             // (never null. GetComponents returns [] if none found)
-            NetworkBehaviours = GetComponents<NetworkBehaviour>();
+            if(_hasChildNetworkBehaviours)
+            {
+                NetworkBehaviours = GetComponentsInChildren<NetworkBehaviour>(true);
+
+            }
+            else
+            {
+                NetworkBehaviours = GetComponents<NetworkBehaviour>();
+            }
+
             if (NetworkBehaviours.Length > byte.MaxValue)
                 Debug.LogError($"Only {byte.MaxValue} NetworkBehaviour components are allowed for NetworkIdentity: {name} because we send the index as byte.", this);
 
@@ -312,6 +321,11 @@ namespace Mirror
                 component.ComponentIndex = i;
             }
         }
+
+
+        [SerializeField]
+        private bool _hasChildNetworkBehaviours = false;
+
 
         // Awake is only called in Play mode.
         // internal so we can call it during unit tests too.

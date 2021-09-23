@@ -334,6 +334,7 @@
 -r:"/Users/bagelandballoon/GitSource/dedicated-webgl-server/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll"
 -r:"/Users/bagelandballoon/GitSource/dedicated-webgl-server/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll"
 -r:"/Users/bagelandballoon/GitSource/dedicated-webgl-server/Library/PackageCache/com.unity.visualscripting@1.6.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"Assets/ConsolePro/Editor/ConsolePro.Editor.dll"
 -r:"Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.dll"
 -r:"Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Mdb.dll"
 -r:"Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Pdb.dll"
